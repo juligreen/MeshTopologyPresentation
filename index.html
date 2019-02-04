@@ -26,7 +26,7 @@
     <div class="slides">
         <section>
             <h2>Mesh-Topologie</h2>
-            <img src="lib/images/mesh_opening_image.gif" width="40%">
+            <img src="images/mesh_opening_image.gif" width="40%">
             <p>von Julian Schwertl und Julius Dehner</p>
         </section>
         <section>
@@ -40,9 +40,8 @@
                 <li>Verwendungszwecke</li>
                 <li>Mesh-Typen</li>
                 <li>Vor- und Nachteile</li>
+                <li>Fazit</li>
             </ul>
-
-
         </section>
         <section>
             <h2>Was ist die Mesh Topologie?</h2>
@@ -52,45 +51,129 @@
             </ul>
         </section>
         <section>
-            <section><h2>Volles Mesh</h2></section>
+            <section><h2>Volles Mesh</h2>
+                <img src="images/fullmesh.png">
+            </section>
         </section>
         <section>
             <section>
                 <h2>Partielles Mesh</h2>
+                <img src="images/partialmesh.png"/>
+                <aside class="notes">
+                    <ul>
+                        <li>
+                            Partiell nur manche verrbunden mit allen, manche nur mit denen verbunden, mit denen sie die
+                            meisten Daten austauschen
+                        </li>
+                        <li>Volles Mesh</li>
+                    </ul>
+                </aside>
             </section>
             <section>
-                <img src="lib/images/PartialMesh.png"/>
+                <img src="images/Selbstheilung.jpg"/>
             </section>
         </section>
         <section>
-            <h2>Flooding</h2>
-            <ul>
-                <li>Geräte müssen eigene Daten erfassen</li>
-                <li>Gleichzeitig beschäftigt mit Weiterleitung der Daten anderer Geräte</li>
-                <li>Ergo ist jedes Gerät Empfänger und Sender zugleich</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Routing</h2>
-            <ul>
-                <li>Verteilung geschieht durch Routing-Tabellen (kürzester Pfad)</li>
-                <li>Bei Ausfall einer Netzwerkeinheit wird ein neuer schnellster Weg gesucht</li>
+            <section>
+                <h2>Flooding</h2>
 
-            </ul>
+                <ul>
+                    <li>Geräte müssen eigene Daten erkennen und verarbeiten</li>
+                    <li>Gleichzeitig beschäftigt mit Weiterleitung der Daten anderer Geräte</li>
+                    <li>Ergo ist jedes Gerät Empfänger und Sender zugleich</li>
+                </ul>
+            </section>
+            <section>
+                <img src="images/web.jpg" width="70%">
+            </section>
         </section>
         <section>
-            <h2>Verwendungszweck</h2>
+            <section>
+                <h2>Routing</h2>
+                <ul>
+                    <li>Verteilung geschieht durch Routing-Tabellen (kürzester Pfad)</li>
+                    <li>Bei Ausfall einer Netzwerkeinheit wird ein neuer schnellster Weg gesucht</li>
+                    <li>Aufwändiger!</li>
+                </ul>
+            </section>
+            <section>
+                <img src="images/dijkst.gif">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Ökonomische Aspekte</h2>
+                <img src="images/money.gif">
+            </section>
+            <section>
+                <ul>
+                    <li class="negative">Hohe Kosten für gesamtes Netzwerk (im Vergleich zu anderen Topologien)</li>
+                    <li class="negative">Erstellung und Instandhaltung ist aufwändig</li>
+                    <li class="positive">Dafür auch hohe Ausfallsicherheit</li>
+                    <li class="positive">Erweiterung und Modifizierung während des Betriebs möglich</li>
+                </ul>
+            </section>
         </section>
         <section>
-            <h2>Ökonomische Aspeckte</h2>
-        </section>
-        <section>
-            <h2>Ökologische Aspekte</h2>
+            <section>
+                <h2>Ökologische Aspekte</h2>
+                <img src="images/Frog-Relaxing-Funny-Picture.jpg">
+            </section>
+            <section>
+                <ul>
+                    <li class="positive">Mit Wireless-Technologien mittlerweile Einsparung an Kabeln</li>
+                    <li class="negative">Ohne Wireless: redundante Verkabelung</li>
+                </ul>
+            </section>
         </section>
         <section>
             <h2>Weitere Aspekte</h2>
+            <ul>
+                <li class="positive">Einfache Fehlerfindung und -isolierung</li>
+                <li class="positive">Hohe Netzwerkauslastung ohne Probleme möglich</li>
+            </ul>
         </section>
+        <section>
+            <section>
+                <h2>Verwendungszweck</h2>
+                <ul>
+                    <li>Orte mit wenig komerziellem Internetausbau &rarr; Selbstgehostetes Mesh-Internet</li>
+                    <li>Internet of Things</li>
+                </ul>
+            </section>
+            <section>
+                <img src="images/IoT.jpg">
+            </section>
 
+        </section>
+        <section>
+            <h2>Fazit</h2>
+            <ul>
+                <li>Größter Kostenpunkt ist die Verkabelung</li>
+                <li>Durch moderne Wireless-Technologien wird größter Kostenpunkt irrelevant</li>
+                <li>Kommerzielle Nutzung kommt nun vermehrt auf</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Bild-Quellen: </h2>
+            <ul>
+                <li><a href="https://hackernoon.com/9-things-you-need-to-know-about-mesh-networks-f61a77e5751a">Mesh
+                    Images</a></li>
+                <li><a href="https://www.youtube.com/watch?v=iIaq3yxzseg">Selbsheilung</a></li>
+                <li><a href="https://www.shutterstock.com/image-vector/spider-fly-web-illustration-on-white-113081116">Spinne</a>
+                </li>
+                <li><a href="https://cis.temple.edu/~giorgio/cis307/readings/graph.html">Routing table</a></li>
+                <li><a href="https://steemit.com/relax/@stimez/frog-relaxing-funny-picture">Frog</a></li>
+            </ul>
+
+            <h2>Text-Quellen:</h2>
+            <ul>
+                <li><a href="https://www.link-labs.com/blog/what-is-mesh-topology">Link-Labs</a></li>
+                <li><a href="https://hackernoon.com/9-things-you-need-to-know-about-mesh-networks-f61a77e5751a">Hackernoon</a>
+                </li>
+            </ul>
+        </section>
     </div>
 </div>
 
@@ -105,6 +188,7 @@
         dependencies: [
             {src: 'plugin/markdown/marked.js'},
             {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/pdfexport/pdfexport.js', async: true},
             {src: 'plugin/notes/notes.js', async: true},
             {
                 src: 'plugin/highlight/highlight.js', async: true, callback: function () {
