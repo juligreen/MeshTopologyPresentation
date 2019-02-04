@@ -188,6 +188,7 @@
         dependencies: [
             {src: 'plugin/markdown/marked.js'},
             {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/zoom-js/zoom.js', async: true},
             {src: 'plugin/pdfexport/pdfexport.js', async: true},
             {src: 'plugin/notes/notes.js', async: true},
             {
@@ -195,7 +196,8 @@
                     hljs.initHighlightingOnLoad();
                 }
             }
-        ]
+        ],
+        slideNumber: "c/t"
     });
 </script>
 </body>
